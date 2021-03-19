@@ -42,7 +42,7 @@ def main():
                                                   args.customer_data_file,
                                                   args.customer_output_file,
                                                   )
-    customer_decider.get_customers_to_be_entertained()
+    customer_decider.decide_customers_to_be_entertained()
 
 
 if __name__ == '__main__':

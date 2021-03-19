@@ -43,10 +43,9 @@ class CustomerEntertainerDecider:
         delta = acos(sin(latitude_in_radians) * sin(self.destination_latitude_in_radians) +
                      cos(latitude_in_radians) * cos(self.destination_latitude_in_radians) * cos(diff_longitude))
         distance = delta * RADIUS_OF_EARTH
-        print(distance)
         return distance
 
-    def get_customers_to_be_entertained(self):
+    def decide_customers_to_be_entertained(self):
         for customer_data in self.load_customer_data():
             distance = self.calculate_dist_to_dest(float(customer_data['latitude']), float(customer_data['longitude']))
             if distance <= 100:
