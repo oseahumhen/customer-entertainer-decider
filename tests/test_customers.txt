@@ -1,0 +1,7 @@
+{"latitude": "53.521111", "user_id": 20, "name": "Enid Enright", "longitude": "-9.831111"}
+{"latitude": "51.802", "user_id": 21, "name": "David Ahearn", "longitude": "-9.442"}
+{"latitude": "54.374208", "user_id": 22, "name": "Charlie McArdle", "longitude": "-8.371639"}
+{"latitude": "53.74452", "user_id": 29, "name": "Oliver Ahearn", "longitude": "-7.11167"}
+{"latitude": "53.761389", "user_id": 30, "name": "Nick Enright", "longitude": "-7.2875"}
+{"latitude": "54.080556", "user_id": 23, "name": "Eoin Gallagher", "longitude": "-6.361944"}
+{"latitude": "52.833502", "user_id": 25, "name": "David Behan", "longitude": "-8.522366"}
