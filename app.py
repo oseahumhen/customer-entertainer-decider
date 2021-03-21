@@ -9,6 +9,9 @@ MAX_TRAVEL_DISTANCE = 100.0  # in km
 
 
 def main():
+    """
+    App entry point function
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument('--customer_data_file',
                         type=Path,
