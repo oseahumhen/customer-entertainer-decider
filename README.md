@@ -16,7 +16,7 @@ A console app used to determine customers to be entertained based on maximum all
    Alternatively, download source code zip:<https://github.com/oseahumhen/customer-entertainer-decider/archive/refs/heads/main.zip> 
    and extract to known directory.
 
-3. Navigate to project directory and run following command to create Python virtual environment
+3. Navigate to project directory (customer-entertainer-decider) and run following command to create Python virtual environment
    ```
     # For Windows users
     py -3.7 -m venv venv
@@ -28,7 +28,7 @@ A console app used to determine customers to be entertained based on maximum all
 ## User Instruction
 
 ### How To Run Application
-1. Navigate to project root (i.e customer-entertainer-decider) and activate virtual environment by running following command below:
+1. Navigate to project root (customer-entertainer-decider) and activate virtual environment by running following command below:
    ```
     # For Windows users
     venv\Scripts\activate.bat
@@ -40,9 +40,10 @@ A console app used to determine customers to be entertained based on maximum all
    ```
    python app.py
    ```
-   Running with any parameters assumes that a customers.txt file exists in project root and uses default maximum travel distance and coordinates defined in source code.
+   Running without any parameters assumes that a customers.txt file exists in project root and uses default maximum travel distance and coordinates defined in source code.
+   Output file will also be saved to project root.
    
-   Application can be run with parameters. To see help menu run `python app.py -h`. Help menu is as seen below:
+   Application can be run with parameters. To see help menu, run `python app.py -h`. Help menu is as seen below:
    ```
    python app.py -h
    usage: app.py [-h] [--customer_data_file CUSTOMER_DATA_FILE]
