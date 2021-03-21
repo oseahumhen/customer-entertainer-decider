@@ -27,7 +27,7 @@ A console app used to determine customers to be entertained based on maximum all
 
 ## User Instruction
 
-###How To Run Application
+### How To Run Application
 1. Navigate to project root (i.e customer-entertainer-decider) and activate virtual environment by running following command below:
    ```
     # For Windows users
