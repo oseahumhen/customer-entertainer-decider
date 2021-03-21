@@ -5,7 +5,7 @@ from app.customer_entertainer_decider import CustomerEntertainerDecider
 
 DESTINATION_LATITUDE = 53.339428
 DESTINATION_LONGITUDE = -6.257664
-MAX_TRAVEL_DISTANCE = 100  # in km
+MAX_TRAVEL_DISTANCE = 100.0  # in km
 
 
 def main():
@@ -26,7 +26,7 @@ def main():
                         help='Longitude of customer destination in degrees',
                         required=False)
     parser.add_argument('--max_travel_distance',
-                        type=int,
+                        type=float,
                         default=MAX_TRAVEL_DISTANCE,
                         help='Maximum travel distance for customers',
                         required=False)

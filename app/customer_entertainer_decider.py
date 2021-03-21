@@ -23,11 +23,13 @@ class CustomerEntertainerDecider:
         :param customer_data_file: (Path) Full path to customer data file
         :param customer_output_file: (Path) Full path to customer output file
         """
-        self.destination_latitude_in_radians = radians(destination_latitude)
-        self.destination_longitude_in_radians = radians(destination_longitude)
+        self.destination_latitude = destination_latitude
+        self.destination_longitude = destination_longitude
+        self.destination_latitude_in_radians = radians(self.destination_latitude)
+        self.destination_longitude_in_radians = radians(self.destination_longitude)
         self.customer_file = customer_data_file
         if not Path(self.customer_file).exists():
-            raise FileNotFoundError(f'{self.customer_file} does not exist')  # test
+            raise FileNotFoundError(f'{self.customer_file} does not exist')
         self.max_travel_distance = max_travel_distance
         self.customer_output_file = customer_output_file
         if not Path(self.customer_output_file).parent.exists():
@@ -86,8 +88,11 @@ class CustomerEntertainerDecider:
         """
         Method to display customers to be entertained to console
         """
+        print(f'Customers within {self.max_travel_distance}km Distance of latitude: {self.destination_latitude} '
+              f'and longitude: {self.destination_longitude}')
+        print('{:<10} {:<10}'.format('USER_ID', 'NAME'))
         for customer in self.customers_to_entertain:
-            print(customer)
+            print('{:<10} {:<10}'.format(customer['user_id'], customer['name']))
 
     def save_customers_to_entertain_to_file(self):
         """
