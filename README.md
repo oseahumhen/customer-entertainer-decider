@@ -26,6 +26,7 @@ A console app used to determine customers to be entertained based on maximum all
    ```
 
 ## User Instruction
+
 ###How To Run Application
 1. Navigate to project root (i.e customer-entertainer-decider) and activate virtual environment by running following command below:
    ```
@@ -69,8 +70,8 @@ A console app used to determine customers to be entertained based on maximum all
    ```
 
 ### How To Run Tests
-1. Ensure you are in the project root directory and run `python test/test_customer_entertainer_decider.py`
+Ensure you are in the project root directory and run `python test/test_customer_entertainer_decider.py`
    
-   Alternatively, from `project_root/tests` directory and  run `python test_customer_entertainer_decider.py`
+Alternatively, from `project_root/tests` directory and  run `python test_customer_entertainer_decider.py`
 
 
