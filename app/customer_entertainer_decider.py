@@ -2,7 +2,7 @@ from math import radians, acos, sin, cos
 from pathlib import Path
 import json
 
-RADIUS_OF_EARTH = 6378  # in km
+RADIUS_OF_EARTH = 6371.009  # in km
 
 
 class CustomerEntertainerDecider:
@@ -89,7 +89,7 @@ class CustomerEntertainerDecider:
         Method to display customers to be entertained to console
         """
         print(f'Customers within {self.max_travel_distance}km Distance of latitude: {self.destination_latitude} '
-              f'and longitude: {self.destination_longitude}')
+              f'and longitude: {self.destination_longitude} include:')
         print('{:<10} {:<10}'.format('USER_ID', 'NAME'))
         for customer in self.customers_to_entertain:
             print('{:<10} {:<10}'.format(customer['user_id'], customer['name']))
