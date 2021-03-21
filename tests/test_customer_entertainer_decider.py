@@ -1,15 +1,11 @@
-import sys
 from pathlib import Path
 import json
 import unittest
 
-print(str(Path(__file__).parent))
-sys.path.append(str(Path(__file__).parent.parent))
 from app.customer_entertainer_decider import CustomerEntertainerDecider
 
 
 class CustomerEntertainerDeciderTest(unittest.TestCase):
-
     def test_non_existent_customer_data_file(self):
         with self.assertRaises(FileNotFoundError):
             CustomerEntertainerDecider(10, 20, 100, Path(__file__).parent / 'not_exist.txt')
