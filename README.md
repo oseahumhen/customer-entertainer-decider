@@ -1,6 +1,7 @@
 # customer-entertainer-decider
 
 A console app used to determine customers to be entertained based on maximum allowed travel distance from a given destination latitude and longitude value.
+Name and user id of customers within allowed travel distance(default is 100km) will be outputted in an output.txt file.
 
 ## Installation Steps
 1. Install Python3.7 on your machine.
