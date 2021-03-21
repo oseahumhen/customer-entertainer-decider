@@ -1,6 +1,6 @@
 # customer-entertainer-decider
 
-A console app used to determine customers to be entertained based on maximum allowed travel distance.
+A console app used to determine customers to be entertained based on maximum allowed travel distance from a given destination latitude and longitude value.
 
 ## Installation Steps
 1. Install Python3.7 on your machine.
@@ -9,11 +9,11 @@ A console app used to determine customers to be entertained based on maximum all
    
    Linux users should follow instructions here: <https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/> or <https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/>
    
-2. Clone this repository by calling:
+2. Clone this repository by running:
    ```
    git clone https://github.com/oseahumhen/customer-entertainer-decider.git
    ```
-   Alternatively, download source code zip:<https://github.com/oseahumhen/customer-entertainer-decider/archive/refs/heads/main.zip> 
+   Alternatively, download source code zip here: <https://github.com/oseahumhen/customer-entertainer-decider/archive/refs/heads/main.zip> 
    and extract to known directory.
 
 3. Navigate to project directory (customer-entertainer-decider) and run following command to create Python virtual environment
@@ -43,7 +43,8 @@ A console app used to determine customers to be entertained based on maximum all
    Running without any parameters assumes that a customers.txt file exists in project root and uses default maximum travel distance and coordinates defined in source code.
    Output file will also be saved to project root.
    
-   Application can be run with parameters. To see help menu, run `python app.py -h`. Help menu is as seen below:
+   Application can be run with parameters. To see help menu, run `python app.py -h`. 
+   See below for help menu console output:
    ```
    python app.py -h
    usage: app.py [-h] [--customer_data_file CUSTOMER_DATA_FILE]
@@ -73,6 +74,6 @@ A console app used to determine customers to be entertained based on maximum all
 ### How To Run Tests
 Ensure you are in the project root directory and run `python test/test_customer_entertainer_decider.py`
    
-Alternatively, from `project_root/tests` directory and  run `python test_customer_entertainer_decider.py`
+Alternatively, from `project_root/tests` directory, run `python test_customer_entertainer_decider.py`
 
 
