@@ -76,7 +76,8 @@ class CustomerEntertainerDecider:
         """
         for customer_data in self.load_customer_data():
             if self.validate_customer_data(customer_data):
-                distance = self.calculate_travel_distance(float(customer_data['latitude']), float(customer_data['longitude']))
+                distance = self.calculate_travel_distance(float(customer_data['latitude']),
+                                                          float(customer_data['longitude']))
                 if distance <= self.max_travel_distance:
                     tmp_dict = {'user_id': customer_data['user_id'], 'name': customer_data['name']}
                     self.customers_to_entertain.append(tmp_dict)
