@@ -52,7 +52,9 @@ class CustomerEntertainerDeciderTest(unittest.TestCase):
         customer_decider = CustomerEntertainerDecider(53.339428,  -6.257664, 100,
                                                       Path(__file__).parent / 'test_customers.txt',
                                                       Path(__file__).parent / 'test_output.txt')
-        self.assertEqual(round(customer_decider.calculate_travel_distance(60, -8), 2), 749.26)
+        self.assertEqual(round(customer_decider.calculate_travel_distance(60, -8)), 748)
+        self.assertEqual(round(customer_decider.calculate_travel_distance(53.1489345, -6.8422408)), 44)
+        self.assertEqual(round(customer_decider.calculate_travel_distance(51.92893, -10.27699)), 313)
 
     def test_output_sorted(self):
         customer_decider = CustomerEntertainerDecider(53.339428, -6.257664, 100,
