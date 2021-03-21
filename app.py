@@ -16,7 +16,8 @@ def main():
     parser.add_argument('--customer_data_file',
                         type=Path,
                         default=Path(__file__).parent / 'customers.txt',
-                        help='Full file path to customer data file',
+                        help='Full file path to customer data file. If not specified, application assumes a '
+                             'customers.txt file exists in project root',
                         required=False)
     parser.add_argument('--destination_latitude',
                         type=float,
@@ -36,7 +37,8 @@ def main():
     parser.add_argument('--customer_output_file',
                         type=Path,
                         default=Path(__file__).parent / 'output.txt',
-                        help='Full file path to output file where validated customers are stored',
+                        help='Full file path to output file where validated customers are stored. '
+                             'Defaults to output.txt in project root',
                         required=False)
     args = parser.parse_args()
     customer_decider = CustomerEntertainerDecider(args.destination_latitude,
