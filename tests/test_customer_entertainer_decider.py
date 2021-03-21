@@ -1,7 +1,10 @@
-import json
+import sys
 from pathlib import Path
+import json
 import unittest
 
+print(str(Path(__file__).parent))
+sys.path.append(str(Path(__file__).parent.parent))
 from app.customer_entertainer_decider import CustomerEntertainerDecider
 
 
