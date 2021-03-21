@@ -10,6 +10,8 @@ Name and user id of customers within allowed travel distance(default is 100km) w
    
    Linux users should follow instructions here: <https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/> or <https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/>
    
+   **NB:** Development was done in Python3.7 but new versions of Python3 or Python3.6 can be used as well.
+   
 2. Clone this repository by running:
    ```
    git clone https://github.com/oseahumhen/customer-entertainer-decider.git
@@ -73,8 +75,8 @@ Name and user id of customers within allowed travel distance(default is 100km) w
    ```
 
 ### How To Run Tests
-Ensure you are in the project root directory and run `python test/test_customer_entertainer_decider.py`
+Ensure you are in the project root directory and run `python tests/test_customer_entertainer_decider.py`
    
-Alternatively, from `project_root/tests` directory, run `python test_customer_entertainer_decider.py`
+Alternatively, from `customer-entertainer-decider/tests` directory, run `python test_customer_entertainer_decider.py`
 
 
