@@ -97,7 +97,7 @@ class CustomerEntertainerDecider:
 
     def save_customers_to_entertain_to_file(self):
         """
-        Method to save customers to entertain to output txt file
+        Method to save customers to entertain in JSON format to output txt file
         """
         with open(self.customer_output_file, 'w') as fo:
             for customer in self.customers_to_entertain:
